@@ -75,7 +75,6 @@ public class Main {
     public static void task32() {
         System.out.println("   ");
         int[] cat = {12, 25, 15, 16, 57, 88, 88, 45, 92, 1_000};
-        System.out.print(cat[0]);
         for (int i = cat.length - 1; i >= 0; i--) {
             if (i == cat.length - 1) {
                 System.out.print(cat[i]);
@@ -91,10 +90,10 @@ public class Main {
         int[] array1 = {2, 15, 12, 16, 125};
         for (int i = 0; i < array1.length; i++) {
             if (array1[i] % 2 != 0) {
-                array1[i]++;
-                System.out.println(Arrays.toString(array1));
+                array1[i] += 1;
             }
         }
+        System.out.println(Arrays.toString(array1));
     }
 }
 
